@@ -1,2 +1,14 @@
-.jesus{text-indent: 16px;
-color: red;}
+
+.versiculo {
+    text-indent: 1em;
+}
+.jesus {
+    color: red;
+}
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+*{margin-top: 20px;}
+b{color: black;}
