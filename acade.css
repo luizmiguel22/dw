@@ -1,0 +1,14 @@
+div{background-color: black;
+color: white;
+text-align: center;}
+.TREINOO{text-align: center;
+display: grid;
+margin-top: 10PX;
+margin-left: 550PX;
+width: 200PX;
+color:black;
+background-color:grey;
+font-size:x-large;
+font-family: fantasy;}
+H2{text-align: center;}
+body{background-color: floralwhite;}
