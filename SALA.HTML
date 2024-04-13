@@ -1,57 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento de Doação de Sangue</title>
+    <title>DOE PARA M32</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #082b50, #041a3b, #1f2d66);            color: #fff;
+            background: linear-gradient(135deg, #082b50, #041a3b, #1f2d66);
         }
 
-        img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        header {
+            background: linear-gradient(90deg, #1a3654, #1c2d47);
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
         }
 
-        button {
-            display: block;
-            width: 150px;
-            margin: 20px auto;
-            padding: 10px;
-            font-size: 16px;
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        h2 {
+            margin: 20px 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            width: 300px;
+            margin: 20px 10px;
+            padding: 15px;
+            font-size: 24px;
             text-align: center;
             text-decoration: none;
             color: #fff;
-            background: linear-gradient(90deg, #0e2b47, #004066);
+            background: linear-gradient(90deg, #29517d, #0d4163);
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        button:hover {
+        .button:hover {
             background: linear-gradient(90deg, #0e2b47, #004066);
         }
 
-        a {
-            text-decoration: none;
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para telas de celular */
+        @media (max-width: 600px) {
+            .button {
+                width: 90%;
+            }
         }
     </style>
 </head>
+
 <body>
-    <img src="img/SANGUE.jpeg" alt="Imagem de doação de sangue">
-    <div style="text-align: center;">
-        <a href="https://www.saude.pr.gov.br/servicos/Saude/Doacoes/Agendar-doacao-de-sangue-no-Hemepar-xv3Kqxo1"><button>AGENDAMENTO</button></a>
-        <a href="https://www.saude.pr.gov.br/Endereco/Hemepar-Campo-Mourao"><button>ENDEREÇO</button></a>
+    <header>
+        <h1>DOE PARA M32</h1>
+        <h2>AJUDE-NOS A AJUDAR</h2>
+    </header>
+
+    <div class="container">
+        <a href="SANGUE.HTML" class="button">INFORMAÇÕES DE DOAÇÃO DE SANGUE</a>
+        <a href="medula.html" class="button">INFORMAÇÕES DE DOAÇÃO DE MEDULA</a>
+        <a href="rif.html" class="button">RIFA SOLIDÁRIA</a>
+        <a href="parocionio.html" class="button">SEJA UM PATROCINADOR</a>
+        <img src="img/sala.jpeg" alt="Sala de espera de hospital">
     </div>
 </body>
+
 </html>
