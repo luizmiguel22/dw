@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
             padding: 0;
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -25,13 +27,10 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
         }
 
-        a {
-            display: block;
-            margin: 20px auto;
-            width: 80%; /* Largura do botão ajustada para ocupar 80% da largura do dispositivo */
-            max-width: 200px; /* Limita a largura máxima do botão */
-            text-align: center;
-            text-decoration: none;
+        .button-container {
+            margin-top: auto; /* Empurra o contêiner para o final da página */
+            width: 80%; /* Largura do contêiner ajustada para ocupar 80% da largura do dispositivo */
+            max-width: 200px; /* Limita a largura máxima do contêiner */
         }
 
         button {
@@ -53,6 +52,8 @@
 </head>
 <body>
     <img src="img/rifa.jpeg" alt="Imagem da rifa solidária">
-    <a href="https://wa.me/5541996386250"><button>Comprar</button></a>
+    <div class="button-container">
+        <a href="https://wa.me/5541996386250"><button>Comprar</button></a>
+    </div>
 </body>
 </html>
