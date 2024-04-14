@@ -22,38 +22,57 @@
             max-width: 80%;
             height: auto;
             display: block;
-            margin: 0 auto; 
+            margin: 20px auto; 
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            animation: pulse 2s infinite alternate; 
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
         }
 
         .button-container {
-            margin-top: auto; 
-            width: 80%; 
-            max-width: 200px; 
+            margin-top: 20px; 
+            width: 80%;
+            max-width: 200px;
         }
 
         button {
             color: white;
             background-color: rgb(53, 53, 250);
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
             padding: 15px 0;
             font-size: 18px;
             width: 100%;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         button:hover {
             background-color: rgb(63, 63, 250);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
+
 <body>
     <img src="img/rifa.jpeg" alt="Imagem da rifa solidária">
     <div class="button-container">
         <a href="https://wa.me/5541996386250"><button>Comprar</button></a>
     </div>
 </body>
+
 </html>

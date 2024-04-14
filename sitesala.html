@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOE PARA M32</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+      
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #082b50, #041a3b, #1f2d66);
+            color: #fff;
+            line-height: 1.6;
         }
 
         header {
@@ -18,25 +24,68 @@
             color: #fff;
             text-align: center;
             padding: 50px 0;
+            position: relative;
+            overflow: hidden;
         }
 
-        h1 {
-            margin: 0;
+        header h1 {
             font-size: 48px;
+            margin: 0;
+            letter-spacing: 2px;
         }
 
-        h2 {
-            margin: 20px 0;
+        header h2 {
             font-size: 36px;
+            margin: 20px 0;
         }
 
+       
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+       
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
+            position: relative;
+            z-index: 1;
         }
 
+        
         .button {
             display: inline-block;
             width: 300px;
@@ -50,14 +99,16 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: background 0.3s ease, transform 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .button:hover {
             background: linear-gradient(90deg, #0e2b47, #004066);
+            transform: translateY(-5px);
         }
 
+     
         img {
             display: block;
             max-width: 100%;
@@ -67,7 +118,6 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
 
-        /* Estilos para telas de celular */
         @media (max-width: 600px) {
             .button {
                 width: 90%;
@@ -75,20 +125,39 @@
         }
     </style>
 </head>
-
 <body>
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#donate">Doar</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>DOE PARA M32</h1>
         <h2>AJUDE-NOS A AJUDAR</h2>
     </header>
 
-    <div class="container">
-        <a href="SANGUE.HTML" class="button">INFORMAÇÕES DE DOAÇÃO DE SANGUE</a>
-        <a href="medula.html" class="button">INFORMAÇÕES DE DOAÇÃO DE MEDULA</a>
-        <a href="rif.html" class="button">RIFA SOLIDÁRIA</a>
-        <a href="parocionio.html" class="button">SEJA UM PATROCINADOR</a>
-        <img src="img/sala.jpeg" alt="Sala de espera de hospital">
+    <div id="about" class="container">
+        <h2>Sobre Nós</h2>
+        <p>A melhor torcida da ginaca(...) esta voltando</p>
     </div>
-</body>
 
+    <div id="donate" class="container">
+        <h2>Opções de Doação</h2>
+        <a href="sa.html" class="button">INFORMAÇÕES DE DOAÇÃO DE SANGUE</a>
+        <a href="medul.html" class="button">INFORMAÇÕES DE DOAÇÃO DE MEDULA</a>
+        <a href="rif.html" class="button">RIFA SOLIDÁRIA</a>
+        <a href="pa.html" class="button">SEJA UM PATROCINADOR</a>
+    </div>
+
+    <div id="contact" class="container">
+        <h2>Contate-nos</h2>
+        <p>Email: guel88442736@gmail.com</p>
+        <p>Telefone: (44) 988025655</p>
+    </div>
+
+    <img src="img/sala.jpeg" alt="Sala de espera de hospital">
+</body>
 </html>
