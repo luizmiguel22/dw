@@ -55,6 +55,29 @@
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
+
+        /* Estilos para o botão de voltar */
+        .back-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #1a3654; /* Cor alterada para combinar com o esquema de cores do site */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button:hover {
+            background-color: #1c2d47; /* Cor alterada para efeito hover */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
     </style>
 </head>
 
@@ -67,7 +90,16 @@
         <p>Olá! Estamos em busca de patrocínio para a nossa sala (M32) na gincana. Se você ou sua empresa estiver interessado em apoiar,
             por favor entre em contato conosco pelo WhatsApp.</p>
         <a href="https://wa.me/5541996386250" class="whatsapp-button">Entrar em contato pelo WhatsApp</a>
+        
+        <!-- Botão de Voltar -->
+        <button class="back-button" onclick="goBack()">Voltar</button>
     </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 
 </html>

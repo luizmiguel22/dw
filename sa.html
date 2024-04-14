@@ -29,17 +29,17 @@
 
         .image {
             width: 100%;
-            max-width: 250px;
+            max-width: 90%;
             height: auto;
             margin: 10px auto;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-            animation: pulse 2s infinite alternate;
+            animation: pulse 3s infinite alternate;
         }
 
         .button {
             display: inline-block;
-            width: 120px;
+            width: 45%;
             margin: 10px;
             padding: 10px;
             font-size: 14px;
@@ -65,12 +65,32 @@
                 transform: scale(1);
             }
             100% {
-                transform: scale(1.05);
+                transform: scale(1.03);
             }
         }
 
         a {
             text-decoration: none;
+        }
+
+        .return-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #0d4163;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .return-button:hover {
+            background-color: #004066;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
     </style>
 </head>
@@ -80,7 +100,14 @@
         <div>
             <a href="https://www.saude.pr.gov.br/servicos/Saude/Doacoes/Agendar-doacao-de-sangue-no-Hemepar-xv3Kqxo1" class="button">AGENDAMENTO</a>
             <a href="https://www.saude.pr.gov.br/Endereco/Hemepar-Campo-Mourao" class="button">ENDEREÇO</a>
+            <button class="return-button" onclick="goBack()">Voltar</button>
         </div>
     </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

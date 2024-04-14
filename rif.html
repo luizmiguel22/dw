@@ -22,10 +22,10 @@
             max-width: 80%;
             height: auto;
             display: block;
-            margin: 20px auto; 
+            margin: 20px auto;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-            animation: pulse 2s infinite alternate; 
+            animation: pulse 2s infinite alternate;
         }
 
         @keyframes pulse {
@@ -38,9 +38,12 @@
         }
 
         .button-container {
-            margin-top: 20px; 
+            margin-top: 20px;
             width: 80%;
             max-width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         button {
@@ -72,7 +75,14 @@
     <img src="img/rifa.jpeg" alt="Imagem da rifa solidária">
     <div class="button-container">
         <a href="https://wa.me/5541996386250"><button>Comprar</button></a>
+        <button onclick="goBack()">Voltar</button>
     </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 
 </html>
